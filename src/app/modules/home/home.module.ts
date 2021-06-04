@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { LandingComponent } from './pages/landing/landing.component';
+import { CoreModule } from '../../core/core.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { LandingComponent } from './pages/landing/landing.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    CoreModule
   ]
 })
 export class HomeModule { }
