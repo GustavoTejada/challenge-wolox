@@ -1,0 +1,48 @@
+footer {
+    padding: 30px 0px;
+    background-image: url('../../../../assets/Backgrounds/Bg_Footer.png');
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0px 100px 0px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.button-login {
+    color: #fff;
+    border-radius: 30px;
+    border: solid 1px var(--primary-color);
+    padding: 10px 50px;
+    background-color: var(--primary-color);
+    transition: all 0.1s ease-in-out;
+}
+
+.button-login:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    border: solid 1px var(--secondary-color);
+    transform: translate3d(0px, -1px, 0px);
+}
+
+.logo-wolox {
+    display: flex;
+    justify-content: center;
+}

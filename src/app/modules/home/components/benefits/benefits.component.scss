@@ -1,0 +1,32 @@
+section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        flex: 1;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.content-benefits {
+    padding: 20px 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex1 {
+    flex: 1;
+    text-align: center;
+    padding: 0px 30px;
+}
