@@ -5,7 +5,7 @@
     <div class="header-buttons">
         <a class="buttons" (click)="scrollToElement(inicio)">Inicio</a>
         <a class="buttons" (click)="scrollToElement(benefits)">Beneficios</a>
-        <a class="buttons" routerLink="/auth/register">Registrate</a>
+        <a *ngIf="!userExist" class="buttons" routerLink="/auth/register">Registrate</a>
         <a class="button-login" routerLink="/auth/login">Ingresar</a>
     </div>
 </header>

@@ -1,4 +1,4 @@
-export interface UserSingUp {
+export interface UserSignUp {
     name:      string;
     last_name: string;
     country:   string;

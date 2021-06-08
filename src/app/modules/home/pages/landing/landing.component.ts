@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
+  userExist = false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    if (localStorage.getItem('token')) {
+      this.userExist = true;
+    }
   }
 
   scrollToElement($element: any): void {

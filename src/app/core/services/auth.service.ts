@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Global } from '../../../global';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { UserSingUp } from '../interfaces/UserSingUp.interface';
+import { UserSignUp } from '../interfaces/UserSignUp.interface';
 import { Observable } from 'rxjs';
 import { UserLogin } from '../interfaces/UserLogin.interface';
 
@@ -18,10 +18,10 @@ export class AuthService {
     private _http: HttpClient
   ) { }
 
-  singUp(params: UserSingUp):Observable<any> {
+  signUp(params: UserSignUp):Observable<any> {
     let userData = JSON.stringify(params);
 
-    return this._http.post(this.baseUrl + "singup", userData, {
+    return this._http.post(this.baseUrl + "signup", userData, {
       headers: this.headers
     })
   }

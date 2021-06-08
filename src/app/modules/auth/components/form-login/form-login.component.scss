@@ -31,13 +31,28 @@ section {
     color: var(--primary-color);
 
     h1 {
-        margin: 0;
+        margin: 0
     }
 }
 
 .card-body {
     padding: 1.35rem;
     flex: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    color: var(--primary-color);
+
+    a {
+        font-weight: 600;
+        color: var(--secondary-color);
+        margin-left: 10px;
+        text-decoration: underline;
+    } 
+    
 }
 
 .field-row {
@@ -154,21 +169,6 @@ label a {
 .button-login:disabled {
     background-color: var(--background-color-dark);
     pointer-events: none;
-}
-
-.card-footer {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-    color: var(--primary-color);
-
-    a {
-        font-weight: 600;
-        color: var(--secondary-color);
-        margin-left: 10px;
-        text-decoration: underline;
-    } 
-    
 }
 
 @media screen and (max-width: 420px) {
