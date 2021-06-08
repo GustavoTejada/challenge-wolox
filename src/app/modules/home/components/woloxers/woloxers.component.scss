@@ -8,6 +8,10 @@ section {
 .section-img {
     position: relative;
     flex: 1;
+
+    img {
+        width: 100%;
+    }
 }
 
 .overlay {

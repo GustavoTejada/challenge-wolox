@@ -1,0 +1,97 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: var(--height-header);
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.link-logo {
+    width: 250px;
+    margin-top: 5px;
+}
+
+.logo-wolox-header {
+    width: 100%;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    margin: 0px 30px;
+    font-weight: 600;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.button-login {
+    color: var(--primary-color);
+    border-radius: 30px;
+    border: solid 1px var(--primary-color);
+    padding: 10px 50px;
+    transition: all 0.1s ease-in-out;
+}
+
+.button-login:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transform: translate3d(0px, -1px, 0px);
+}
+
+footer {
+    padding: 40px 0px;
+    background-image: url('../../../../../assets/Backgrounds/Bg_Footer.png');
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0px 100px 0px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.button-login {
+    color: #fff;
+    border-radius: 30px;
+    border: solid 1px var(--primary-color);
+    padding: 10px 50px;
+    background-color: var(--primary-color);
+    transition: all 0.1s ease-in-out;
+}
+
+.button-login:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    border: solid 1px var(--secondary-color);
+    transform: translate3d(0px, -1px, 0px);
+}
+
+.logo-wolox-footer {
+    display: flex;
+    justify-content: center;
+}

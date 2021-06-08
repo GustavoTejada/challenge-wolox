@@ -1,5 +1,28 @@
-<app-layout>
+<header>
+    <a href="/" class="link-logo">
+        <img class="logo-wolox-header" src="assets/logo_full_color.svg" alt="Wolox">
+    </a>
+    <div class="header-buttons">
+        <a class="buttons" (click)="scrollToElement(inicio)">Inicio</a>
+        <a class="buttons" (click)="scrollToElement(benefits)">Beneficios</a>
+        <a class="buttons" routerLink="/auth/register">Registrate</a>
+        <a class="button-login" routerLink="/auth/login">Ingresar</a>
+    </div>
+</header>
+<section #inicio>
     <app-hero></app-hero>
-    <app-woloxers></app-woloxers>
+</section>    
+<app-woloxers></app-woloxers>
+<section #benefits>
     <app-benefits></app-benefits>
-</app-layout>
+</section>
+<footer>
+    <div class="content-footer">
+        <h1>Gracias por <span class="primary-color">completar el ejercicio</span></h1>
+        <h2>Te invitamos a ver mas información</h2>
+        <a class="button-login">Siguenos</a>
+    </div>
+    <div class="logo-wolox-footer">
+        <img src="assets/Ic_Wolox_Footer.svg" alt="">
+    </div>
+</footer>

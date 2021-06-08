@@ -2,11 +2,11 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 60px;
-    position: fixed;
     width: 100%;
     top: 0;
     height: var(--height-header);
     z-index: 999;
+    background-image: url('../../../../assets/Backgrounds/Bg_Header.png');
 }
 
 .link-logo {
@@ -14,33 +14,6 @@ header {
     margin-top: 5px;
 }
 
-img {
+.logo-wolox-header {
     width: 100%;
-}
-
-.header-buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons {
-    margin: 0px 30px;
-    font-weight: 600;
-    padding: 10px 0px;
-}
-
-.button-login {
-    color: var(--primary-color);
-    border-radius: 30px;
-    border: solid 1px var(--primary-color);
-    padding: 10px 50px;
-    transition: all 0.1s ease-in-out;
-}
-
-.button-login:hover {
-    color: #fff;
-    background-color: var(--primary-color);
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
-    transform: translate3d(0px, -1px, 0px);
 }
