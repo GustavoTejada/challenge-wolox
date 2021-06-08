@@ -95,4 +95,19 @@ section {
     }
 }
 
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+    .overlay {
+        h1 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+        .twitter {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 

@@ -32,3 +32,15 @@ h1 {
 .color-secondary {
     color: var(--secondary-color);
 }
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .hero-img img{
+        width: 80%;
+    }
+    .hero-text {
+        padding: 0;
+    }
+}

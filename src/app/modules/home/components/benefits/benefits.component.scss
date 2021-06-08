@@ -30,3 +30,12 @@ section {
     text-align: center;
     padding: 0px 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .content-benefits {
+        flex-direction: column;
+    }
+    .flex1 {
+        flex: 2;
+    }
+}

@@ -1,8 +1,19 @@
 <header>
-    <a href="/" class="link-logo">
-        <img class="logo-wolox-header" src="assets/logo_full_color.svg" alt="Wolox">
-    </a>
-    <div class="header-buttons">
+    <div class="logo-menu-container">
+        <a href="/" class="link-logo">
+            <img class="logo-wolox-header" src="assets/logo_full_color.svg" alt="Wolox">
+        </a>
+        <button class="menu" (click)="showMenu = !showMenu">
+            <fa-icon [icon]="faBars"></fa-icon>
+        </button>
+    </div>
+    <div class="header-buttons desktop">
+        <a class="buttons" (click)="scrollToElement(inicio)">Inicio</a>
+        <a class="buttons" (click)="scrollToElement(benefits)">Beneficios</a>
+        <a *ngIf="!userExist" class="buttons" routerLink="/auth/register">Registrate</a>
+        <a class="button-login" routerLink="/auth/login">Ingresar</a>
+    </div>
+    <div class="header-buttons mobile" *ngIf="showMenu">
         <a class="buttons" (click)="scrollToElement(inicio)">Inicio</a>
         <a class="buttons" (click)="scrollToElement(benefits)">Beneficios</a>
         <a *ngIf="!userExist" class="buttons" routerLink="/auth/register">Registrate</a>
@@ -20,7 +31,7 @@
     <div class="content-footer">
         <h1>Gracias por <span class="primary-color">completar el ejercicio</span></h1>
         <h2>Te invitamos a ver mas información</h2>
-        <a class="button-login">Siguenos</a>
+        <a class="button-follow">Siguenos</a>
     </div>
     <div class="logo-wolox-footer">
         <img src="assets/Ic_Wolox_Footer.svg" alt="">
