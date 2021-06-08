@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserLogin } from 'src/app/core/interfaces/UserLogin.interface';
 import { AuthService } from 'src/app/core/services/auth.service';
 
@@ -17,7 +18,8 @@ export class FormLoginComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private _authService: AuthService
+    private _authService: AuthService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -33,6 +35,7 @@ export class FormLoginComponent implements OnInit {
       response => {
         let token = response.token;
         localStorage.setItem('token', token);
+        this.router.navigate(['/techs/collection']);
       }, error => {
         console.error(error);
       }

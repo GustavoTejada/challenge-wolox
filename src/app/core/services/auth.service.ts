@@ -33,4 +33,14 @@ export class AuthService {
       headers: this.headers
     })
   }
+
+  getToken() {
+    let token = localStorage.getItem('token');
+
+    if (token != undefined) {
+        return token;
+    }
+
+    return null;
+}
 }

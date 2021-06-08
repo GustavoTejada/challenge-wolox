@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Country } from 'src/app/core/interfaces/Country.interface';
 import { AuthService } from 'src/app/core/services/auth.service';
 import { UserSignUp } from '../../../../core/interfaces/UserSignUp.interface';
@@ -54,6 +55,7 @@ export class FormRegisterComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
+    private router: Router,
     private _authService: AuthService
   ) { }
 
@@ -78,7 +80,9 @@ export class FormRegisterComponent implements OnInit {
     }
     this._authService.signUp(userData).subscribe(
       response => {
-        console.log(response);
+        let token = response.token;
+        localStorage.setItem('token', token);
+        this.router.navigate(['/techs/collection']);
       }, error => {
         console.log(error);
       }
