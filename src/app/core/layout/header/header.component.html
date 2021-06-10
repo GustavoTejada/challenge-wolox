@@ -2,4 +2,10 @@
     <a href="/" class="link-logo">
         <img class="logo-wolox-header" src="assets/logo_full_color.svg" alt="Wolox">
     </a>
+    <div class="content-fav" *ngIf="favsArray && favsArray.length > 0">
+        <fa-icon class="heart" [icon]="faHeart"></fa-icon>
+        <div class="count-favs">
+            <span>{{favsArray.length}}</span>
+        </div>
+    </div>
 </header>

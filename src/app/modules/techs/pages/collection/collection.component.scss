@@ -1,0 +1,129 @@
+section {
+    background-color: var(--background-color-dark);
+    padding: 20px 20px;
+}
+
+.heading {
+    display: flex;
+    padding: 20px;
+}
+
+.heading-logo {
+    flex: 1;
+    margin-right: 16px;
+}
+
+.heading-item {
+    flex: 4;
+    color: var(--text-color-secondary);
+    font-weight: 500;
+
+    display: flex;
+    justify-content:center;
+    text-align: left;
+    align-content: center;
+}
+
+.container-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    padding: 20px;
+    
+    text-align: center;
+    align-items: center;
+
+    background-color: var(--background-color-light);
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+
+}
+
+.flex4 {
+    flex: 4;
+}
+
+
+.logo {
+    flex: 1;
+    margin-right: 16px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.heart {
+    font-size: 25px;
+    color: lightgrey;
+    display: inline-block;
+    transition: all .2s;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.heart:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.form-control {
+    display: block;
+    // width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #687281;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    border-radius: .35rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #687281;
+    background-color: #fff;
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.0625rem var(--primary-color);
+}
+
+.order-by {
+    text-decoration: underline;
+}
+
+.order-by:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.counts {
+    margin: 12px 0;
+    color: var(--text-color-secondary);
+}
+
+@media screen and (max-width: 720px) {
+    .hide {
+        display: none;
+    }
+
+    .row {
+        padding: 10px 5px;
+    }
+
+    .heading{
+        padding: 10px 5px;
+    }
+}

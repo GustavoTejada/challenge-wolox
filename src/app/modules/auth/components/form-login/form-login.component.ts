@@ -35,6 +35,7 @@ export class FormLoginComponent implements OnInit {
       response => {
         let token = response.token;
         localStorage.setItem('token', token);
+        localStorage.setItem('favs', '[]');
         this.router.navigate(['/techs/collection']);
       }, error => {
         console.error(error);

@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { TechsRoutingModule } from './techs-routing.module';
 import { CollectionComponent } from './pages/collection/collection.component';
+import { CoreModule } from '../../core/core.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import { CollectionComponent } from './pages/collection/collection.component';
   ],
   imports: [
     CommonModule,
-    TechsRoutingModule
+    TechsRoutingModule,
+    CoreModule,
+    FontAwesomeModule,
+    FormsModule
   ]
 })
 export class TechsModule { }

@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Global } from '../../../global';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { UserSignUp } from '../interfaces/UserSignUp.interface';
 import { Observable } from 'rxjs';
 import { UserLogin } from '../interfaces/UserLogin.interface';
+import { Global } from 'src/global';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  public baseUrl: string = Global.baseUrl;
-  public headers = new HttpHeaders().set('Content-Type', 'application/json');
+  private baseUrl: string = Global.baseUrl;
+  private headers = new HttpHeaders().set('Content-Type', 'application/json');
 
 
   constructor(

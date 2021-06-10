@@ -10,6 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {AuthModule} from './modules/auth/auth.module';
+import { TechsModule } from './modules/techs/techs.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {AuthModule} from './modules/auth/auth.module';
     CoreModule,
     HomeModule,
     AuthModule,
+    TechsModule,
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,

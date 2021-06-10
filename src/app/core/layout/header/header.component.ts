@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LocalStorageService } from '../../services/local-storage-service.service';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  favs: any = localStorage.getItem('favs');
+  favsArray: any;
+  faHeart = faHeart;
+
+  constructor(
+    private _localStorageService: LocalStorageService 
+  ) {
+  }
 
   ngOnInit(): void {
+    this._localStorageService.getItem('favs').subscribe(
+      response => {
+        this.favsArray = response;
+      }
+    )
   }
 
 }
