@@ -1,6 +1,6 @@
 section {
     padding-top: var(--height-header);
-    background-image: url('../../../../../assets/Backgrounds/Bg_Header.png');
+    background-image: url("../../../../../assets/Backgrounds/Bg_Header.png");
 }
 
 .content {
@@ -37,10 +37,11 @@ h1 {
     .content {
         flex-direction: column;
     }
-    .hero-img img{
+    .hero-img img {
         width: 80%;
     }
     .hero-text {
-        padding: 0;
+        padding: 0px 10px;
+        text-align: center;
     }
 }

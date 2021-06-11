@@ -24,12 +24,6 @@ header {
     justify-content: space-between;
 }
 
-.buttons {
-    margin: 0px 30px;
-    font-weight: 600;
-    padding: 10px 0px;
-    cursor: pointer;
-}
 
 .button-login {
     color: var(--primary-color);
@@ -49,7 +43,7 @@ header {
 
 footer {
     padding: 40px 0px;
-    background-image: url('../../../../../assets/Backgrounds/Bg_Footer.png');
+    background-image: url("../../../../../assets/Backgrounds/Bg_Footer.png");
 }
 
 .content-footer {
@@ -61,13 +55,8 @@ footer {
 }
 
 h1 {
-    font-size: 40px;
     margin-bottom: 0;
     font-weight: 600;
-}
-
-h2 {
-    font-size: 30px;
 }
 
 .primary-color {
@@ -127,6 +116,22 @@ h2 {
     display: none;
 }
 
+.buttons {
+    display: block;
+    position: relative;
+    margin: 0px 30px;
+    font-weight: 500;
+    padding: 10px 0px;
+    cursor: pointer;
+    border-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons:hover {
+   border-bottom: solid 1px var(--secondary-color);
+   color: var(--primary-color);
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         display: inline;
@@ -164,5 +169,17 @@ h2 {
     .button-login {
         padding: 10px 15px;
         width: 50%;
+    }
+
+    .link-logo {
+        width: 150px;
+    }
+
+    .content-footer {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
     }
 }

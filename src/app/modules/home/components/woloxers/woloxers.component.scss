@@ -23,7 +23,6 @@ section {
     flex-direction: column;
 
     h1 {
-        font-size: 50px;
         color: var(--primary-color);
         font-weight: 600;
 
@@ -103,6 +102,7 @@ section {
         h1 {
             font-size: 30px;
             margin-top: 0;
+            margin-bottom: 5px;
         }
         .twitter {
             margin-bottom: 20px;
