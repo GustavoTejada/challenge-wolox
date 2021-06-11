@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
@@ -8,8 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor(private translate: TranslateService) { 
-    translate.setDefaultLang('en');
+  constructor() { 
   }
 
   ngOnInit(): void {
