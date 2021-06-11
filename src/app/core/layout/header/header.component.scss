@@ -43,6 +43,12 @@ header {
     height: 40px;
 }
 
-.link-logo {
-    width: 150px;
+@media screen and (max-width: 720px) {
+    header {
+        padding: 20px 20px;
+    }
+
+    .link-logo {
+        width: 175px;
+    }
 }
